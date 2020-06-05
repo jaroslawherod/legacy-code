@@ -1,0 +1,14 @@
+package io.c8y.legacycode.hardtowritetests.statical;
+
+public class Emailer {
+
+	public void sendGreetingEmailTo(User user) {
+		RealEmailSender.sendEmailTo(user.email,"hello, "+ user.name);
+	}
+
+	public void sendByeByeEmailTo(User user) {
+		RealEmailSender.sendEmailTo(user.email,"bye");
+		
+	}
+
+}
